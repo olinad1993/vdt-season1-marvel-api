@@ -26,7 +26,7 @@
 
 Cypress.Commands.add('setToken' , function(){
     
-    cy.request({
+    cy.api({
         method: 'POST',
         url: '/sessions',
         body: {
@@ -44,7 +44,7 @@ Cypress.Commands.add('setToken' , function(){
 
 Cypress.Commands.add('back2ThePast' , function(){
 
-    cy.request({
+    cy.api({
         method: 'DELETE',
         url: '/back2thepast/62b0b4bcfb2a20001619df32',
        
