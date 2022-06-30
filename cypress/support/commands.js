@@ -35,7 +35,6 @@ Cypress.Commands.add('setToken' , function(){
         }
     }).then(function(response){
         expect(response.status).to.eql(200)
-        cy.log(response.body.token)
         Cypress.env('token', response.body.token)
     })
 
